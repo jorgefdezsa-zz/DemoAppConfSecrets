@@ -1,0 +1,28 @@
+﻿@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        background-color: @ViewData["BackgroundColor"]
+    }
+    h1 {
+        color: @ViewData["FontColor"];
+        font-size: @ViewData["FontSize"]px;
+    }
+    span{
+        color: @ViewData["FontColor"];
+        font-size: 44px;
+    }
+</style>
+<head>
+    <title>Index View</title>
+</head>
+<body>
+    <h1>@ViewData["Message"]</h1>
+    <span>@ViewData["FromKV"]</span>
+</body>
+</html>
